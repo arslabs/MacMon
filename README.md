@@ -16,3 +16,5 @@ Macmini:macmon $ ./find_serial.py
 ```
 Macmini:macmon $ nohup ./macmon.py &
 ```
+
+* Hardware connections can be found in Hardware directory.
