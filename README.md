@@ -12,6 +12,16 @@ Macmini:macmon $ ./find_serial.py
 /dev/cu.usbmodem1463201 - Feather M0, vid: 9114, pid: 32779, serial no.: 25657693514D503259202020FF101F3E
 ```
 3. Change 'config.json' appropriately. MacMon use serial_no first for finding the device. Otherwise use vid & pid for finding the device.
+```
+Macmini:macmon $ cat config.json
+{
+	"baud":115200,
+	"duration": 2,
+	"vid":9114,
+	"pid":32779,
+	"serial_no":"25657693514D503259202020FF101F3E"
+}
+```
 4. Execute 'macmon.py' with root privilidge for opening serial port
 ```
 Macmini:macmon $ nohup ./macmon.py &
