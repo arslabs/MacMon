@@ -24,7 +24,7 @@ Macmini:macmon $ cat config.json
 ```
 4. Execute 'macmon.py' with root privilidge for opening serial port
 ```
-Macmini:macmon $ nohup ./macmon.py &
+Macmini:macmon $ nohup sudo ./macmon.py &
 ```
 
 * Hardware connections can be found in Hardware directory.
