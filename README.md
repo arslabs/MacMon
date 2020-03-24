@@ -28,3 +28,4 @@ Macmini:macmon $ nohup ./macmon.py &
 ```
 
 * Hardware connections can be found in Hardware directory.
+* Arduino sketch (MacTempFan.ino) can be used for Adafruit Feather M0 and Arduino Nano without any modification.
