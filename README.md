@@ -15,13 +15,22 @@ Macmini:macmon $ ./find_serial.py
 ```
 Macmini:macmon $ cat config.json
 {
-	"baud":115200,
+	"uart_enabled":1,
 	"duration": 2,
+	"baud":115200,
 	"vid":9114,
 	"pid":32779,
-	"serial_no":"25657693514D503259202020FF101F3E"
+	"serial_no":"25657693514D503259202020FF101F3E",
+	"mqtt_enabled":1,
+	"mqtt_broker":"arslabs.myds.me",
+	"mqtt_port":31883,
+	"mqtt_topic1": "macmon/temp",
+	"mqtt_topic2":"macmon/fan"
 }
 ```
+* uart & mqtt support can be enabled respectively.
+* For UART support, you should specify the parameters for choosing uart device (vid, pid, serial_no) and communication parameter (baud).
+* For MQTT support, you should specify the mqtt broker, port, and two topics (for temperature and fan speed).
 4. Execute 'macmon.py' with root privilidge for opening serial port
 ```
 Macmini:macmon $ nohup sudo ./macmon.py &
